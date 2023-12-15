@@ -6,6 +6,7 @@ body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  background-color: bisque;
 }
 
 h1 {
@@ -46,29 +47,19 @@ ul {
   padding-inline-start: 20px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
-}
-
 .square {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 60px;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 100px;
 }
 
 .board-row:after {
@@ -78,13 +69,33 @@ body {
 }
 
 .status {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 .game {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 94vh;
 }
 
 .game-info {
-  margin-left: 20px;
+  margin-left: 30px;
+}
+
+.game-info > ol > li {
+  margin-bottom: 15px;
+}
+
+.game-info > ol > li > button {
+  font-size: 15px;
+  background: rgb(177, 65, 65);
+  color: white;
+  
+}
+
+.game-info > ol > li::marker{
+  font-size: 20px;
 }
